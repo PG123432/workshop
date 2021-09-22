@@ -20,7 +20,7 @@ import random
 gh = Github("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")
 
 
-#getting the organization and its members
+#getting the organization and its members 
 
 softdev_class = gh.get_organization("stuy-softdev").get_members()
 # ^ this returns a weird class called a paginated list
@@ -29,7 +29,7 @@ softdev_class = gh.get_organization("stuy-softdev").get_members()
 
 while True:
     student = softdev_class[random.randint(0, softdev_class.totalCount -1)]
-
+    #using the api, I grabbed a random name from the classroom
 
     '''
     Have a while loop here because it seems that some people don't have a
