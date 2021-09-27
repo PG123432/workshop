@@ -15,10 +15,17 @@
 
 import random
 
-pd1 = ["Emma Buller", "Julia Nelson", "Owen Yaggy", "Haotian Gao", "Ishraq Mahid", "Kevin Cao", "Ivan Lam", "Michelle Lo"]
+pd1 = ["Alejandro Alonso", "Aryaman Goenka", "Angela Zhang", "Christopher Liu", "Deven Maheshwari",
+       "Emma Buller", "Ella Krechmer", "Gavin McGinley", "Haotian Gan", "Ivan Lam", "Ishraq Mahid",
+       "Ivan Mijacika", "Julia Nelson", "Lucas Lee", "Lucas Tom Wong", "Michelle Lo", "Oscar Wang",
+       "Owen Yaggy", "Renggeng Zheng", "Shriya Anand", "Shyne Choi","Sadid Ethun", "Tomas Acuna","Theo Fahey",
+       "Tina Nguyen", "Tami Takada", "William Chen", "Yusuf Elsharawy", "Zhaoyu Lin"]
 
-pd2 = ["Jesse Xie", "Rachel Xiao", "Yuqing Wu", "Liesel Wong", "Josephine Lee", "Patrick Ging", "Yaying Liang", "Raymond Yeung"]
-
+pd2 = ["Alif Abdullah", "Andrew Juang", "Andy Lin", "Austin Ngan", "Annabel Zhang", "Daniel Sooknanan",
+       "Eric Guo", "Eliza Knapp", "Hebe Huang", "Han Zhang", "Yoonah Chang", "Josephine Lee", "Jonathan Wu",
+       "Jesse Xie", "Justin Zou", "Kevin Cao", "Liesel Wong", "Michael Borczuk", "Mark Zhu", "Noakai Aronesty",
+       "Patrick Ging","Qina Liu", "Rachel Xiao", "Raymond Yeung", "Sophie Liu", "Shadman Rakib","Thomas Yu",
+       "Wenhao Dong", "Yaying Liang Li", "Yuqing Wu"]
 
 print( pd1[random.randint(0, len(pd1) - 1)])
 print( pd2[random.randint(0, len(pd2) - 1)])
