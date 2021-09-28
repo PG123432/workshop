@@ -41,10 +41,13 @@ with open ("occupations.csv", "r") as f:
 
         so in turn it would look like
 
-        {50: "Teacher", "75": Programmer, "100","Other"}
+        {50: "Teacher", "75": "Programmer", 100,"Other"}
 
         And we multiplied the numbers by 10 just so we can use random.randint easily.
 
+        so it'd really
+
+        {500: "Teacher", "750": "Programmer", 1000,"Other"}
 
         '''
 
