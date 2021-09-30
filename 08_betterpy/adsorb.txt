@@ -1,0 +1,20 @@
+Group No Named - Patrick Ging, Ryan Wang, Hebe Huang Period 2
+
+Questions:
+
+What's the efficacy of opening occupations csv everytime the function is called. 
+
+Does the pop function have a return value or a side effect?
+
+What is the actual machenery behind random.choices() ? 
+
+
+Comments:
+
+I didn't realize that there was a function in the random library able to do the work for us. Likewise, I was unaware of a dictreader in the csv module that would've simplified things greatly.
+
+I thought Ryan's code was much more concise and definetly a step up from ours in that regard.
+
+Concerns:
+
+Being able to use this capability resourcefully with bigger data, especially when there are more features to the data.
