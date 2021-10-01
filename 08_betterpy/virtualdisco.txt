@@ -1,10 +1,18 @@
 Group No Named - Patrick Ging, Ryan Wang, Hebe Huang Period 2
 
-The command "$ python3 -m venv ~/myherozero" makes a python3 virtual environment in ~/myherozero.
+The command "$ python3 -m venv ~/myherozero" makes a python3 virtual environment in ~/myherozero, a new directory.
 
-A virtual environment is an environment with its own interpretor and library. That means that any package installed with pip in that environment can only be used in that environment (1). It's adventageous mostly because it allows you to isolate the libraries being used in your program and also makes deleting the environment when one's done really simple - you delete the folder. 
+A virtual environment is an environment with its own interpreter and library. That means that any package installed with pip in that environment can only be used in that environment (1). It's advantageous mostly because it allows you to isolate the libraries being used in your program and also makes deleting the environment when one's done really simple - you delete the folder. 
+
+When you create a virtual environment, several things are created: 
+- The "Include" directory contains C headers that compile Python packages.
+- The "Lib" directory contains a copy of the Python version and "site-packages", where dependencies are stored
+- The "bin"/"Script" directory contains Python binary files that interact with the virtual environment
+- "pyvenv.cfg" contains information about the virtual environment
 
 
 Sources:
 
-1) https://docs.python.org/3/library/venv.html 
+1) https://docs.python.org/3/library/venv.html
+2) https://realpython.com/python-virtual-environments-a-primer/
+3) https://zetcode.com/python/venv/
