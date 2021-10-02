@@ -1,0 +1,13 @@
+TNPG - Patrick Ging (with his duck Chris) and Eric Guo (with his duck )
+10-2-21
+K09
+
+Q0: None that I know of. I know when you create an instance you use class_name() in java. 
+
+Q1: When I open the index page in http://127.0.0.1:5000 it will do tha function. I know  this because it says route, making me think it has to do with a path. 
+
+Q2: print(__name__) should print to the terminal.
+
+Q3: When I ended the "$ python3 app.py" process, it printed "__main__". The return value will end up on the screen when you went to 127.0.0.1:5000/ . I know this because I went there myself and saw "No hablo queso!" exactly like the function return value.
+
+Q4: I have not seen similar constructs in other languages - but I have seen something similar when we were going over Tkinter in python. If I recall, there's a function called .mainloop(). But I don't fully remember if they have the same functionality.
