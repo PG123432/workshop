@@ -1,3 +1,13 @@
+
+'''
+
+The Nameless Team Patrick Ging Hebe Huang Eric Guo Period 2
+Softdev
+Occupation Picker using Flask
+2021-10-04
+
+'''
+
 from flask import Flask
 import csv
 import random
