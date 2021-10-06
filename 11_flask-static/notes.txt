@@ -1,0 +1,9 @@
+The Nameless Group - Patrick Ging, Hebe Huang, Eric Guo Period 2
+
+
+We noticed that there was a file without an extenstion. Upon further inspection via gedit, we noticed that it was plaintext.
+
+We also had an html file in the static directory. As we correctly guessed, when we When we accessed it's directory on localhost, we were served the results.
+
+
+However, when we went to the directory for the plantext file, we were prompted to download the file. We originally thought it would throw an error as we thought it would try to find a the path instead of the file. 
