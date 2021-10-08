@@ -1,0 +1,7 @@
+The Nameless Team: Patrick Ging, Eric Guo, Hebe Huang
+
+Question 0 - We obtained an error saying that render_template was not defined. 
+
+Question 1 - localhost:5000/my_foist_template
+
+Question 2 - 'model_tmplt.html' is the template rendered at /my_foist_template. fooooo is replacing {{ foo }} as the title. coll is what is used to pass in collection, which will then be displayed on the webpage.  
