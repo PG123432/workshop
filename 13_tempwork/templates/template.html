@@ -18,13 +18,14 @@ Patrick Ging with his duck Chris
 
   <body>
 
+    <h1>Your job is {{chosen_job}}!</h1>
+
 
     <table> <tr> <th> Possible Jobs </th> </tr>
-      {%for job, percentage in jobAndPercentage%}
-        <tr> <td> {{job}} : {{percentage}} </td></tr>
+      {%for job, percentage in jobAndPercentage %}
+        <tr> <td> {{job}} with {{percentage}} % chance </td></tr>
       {% endfor %}
 
     </table>
-         <h1>Your job is {{chosen_job}}!</h1>
   </body>
 </html>
