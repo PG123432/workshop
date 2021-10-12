@@ -1,4 +1,7 @@
-
+#Team Duck on a Rock - Jonathan W. [Loki] ,Patrick G. [Chris], Ryan W. [Jack] | Period 2
+#SoftDev
+#K13 - Template for Success/Jinja templates and flask/We worked in new trios to create a template to display jobs and percentages on the website as well as displaying the randomly selected job.
+#2021-10-09
 
 from flask import Flask, render_template
 import csv
@@ -34,11 +37,8 @@ def occupy():
 
                     ''' 
                     So you can convert a csv_reader into a list of lists
-
                     we just need to use the to list command
-
                     list()
-
                     
                     so this
                     list(csv.reader(open("occupations.csv", "r"), delimiter=","))[1:-1]
@@ -53,7 +53,6 @@ def occupy():
             '''
             There is a dictionary command that turns the dictionary into a list of tuples
             dict.items()
-
             >>> d = { 'a': 1, 'b': 2, 'c': 3 }
             >>> d.items()
             [('a', 1), ('c', 3), ('b', 2)]
