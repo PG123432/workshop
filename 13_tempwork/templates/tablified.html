@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Team Duck on a Rock
+Jonathon Wu with his duck Loki,
+Patrick Ging with his duck Chris
+, Ryan Wang with his duck Jack, Period 2
+
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Occupation</title>
+    <h2>A random occupation by Team Duck on a Rock </h2>
+    <h4>Jonathon Wu with his duck Loki,
+    Patrick Ging with his duck Chris
+    , Ryan Wang with his duck Jack, Period 2</h4>
+  </head>
+
+  <body>
+
+    <h1>Your job is {{chosen_job}}!</h1>
+
+
+    <table> <tr> <th> Possible Jobs </th> </tr>
+      {%for job, percentage in jobAndPercentage %}
+        <tr> <td> {{job}} with {{percentage}} % chance </td></tr>
+      {% endfor %}
+
+    </table>
+  </body>
+</html>

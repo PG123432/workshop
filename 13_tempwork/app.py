@@ -45,7 +45,7 @@ def occupy():
                     is us reading in the file again and converting it's content to a list of lists and this works fine because it's just
                     two items per row 
                     '''
-                    return render_template("template.html", jobAndPercentage=list(csv.reader(open("data/occupations.csv", "r"), delimiter=","))[1:-1], chosen_job=job_and_prob[percent])
+                    return render_template("tablified.html", jobAndPercentage=list(csv.reader(open("data/occupations.csv", "r"), delimiter=","))[1:-1], chosen_job=job_and_prob[percent])
                     
                     #if it's below the value that means it's in between it and the value before it -
                     #elsewise we know it's above the value so we don't actually need another logic operator
