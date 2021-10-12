@@ -7,8 +7,12 @@ selected job.
 
 Anything Notable:
 
-Nothing in particular. It's a lot cleaner at times when you can replace some disgusting code with a nice loop or a template.
+- Nothing in particular. 
+- It's a lot cleaner at times when you can replace some disgusting code with a nice loop or a template.
 
 EGO:
 
-I feel that the section is really accurate in its descriptions of the archetypes. In terms of owning programs, I have no comment on it. 
+- I feel slightly called out by the fact that most programmers learn in the "detached"
+direction as I agree with that sentiment. Though I don't agree that I feel like
+I am attached to the programs I create.
+- I feel that the section is really accurate in its descriptions of the archetypes. In terms of owning programs, I have no comment on it. 
