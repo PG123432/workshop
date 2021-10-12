@@ -1,0 +1,14 @@
+Team Duck on a Rock - Jonathan W. [Loki] ,Patrick G. [Chris], Ryan W. [Jack] | Period 2
+SoftDev
+K13 - Template for Success/Jinja templates and flask/We worked in new trios to create a
+template to display jobs and percentages on the website as well as displaying the randomly
+selected job.
+2021-10-09
+
+Anything Notable:
+
+Nothing in particular. It's a lot cleaner at times when you can replace some disgusting code with a nice loop or a template.
+
+EGO:
+
+I feel that the section is really accurate in its descriptions of the archetypes. In terms of owning programs, I have no comment on it. 
