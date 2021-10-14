@@ -1,0 +1,11 @@
+Team Atom
+Patrick Ging, Qina Liu, Joshua Kleopfar 
+Period 2
+
+We noticed that the requests would default to a 'get' request if we didnt' specify.
+
+If we passed it a list of request types, ie: ['get', 'post'], it would be able to handle both, so we had it so that it would handle both. 
+
+We could also speficify the type of request to perform in the html form. 
+
+Something strange was that to access the data depending on the get and post was different. For example request.form.get(property) for post and for get request.args.get(property).
