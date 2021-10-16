@@ -22,7 +22,7 @@ def disp_loginpage():
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     if request.method == "POST":
-        return render_template("response.html", username=request.form.get("username") )        
+        return render_template("response.html", req=request.method,username=request.form.get("username") )        
         '''
         So if you want to get form data from a POST request you need to do request.form.get("bluh")
         But if it's from a get you need request.args.get("firstname")
