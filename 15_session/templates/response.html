@@ -1,0 +1,28 @@
+<!--
+    Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+    SoftDev
+    k15 -Sessions Greetings
+    2021-10-14
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello {{username}}!</title>
+</head>
+<body>
+
+  <h1>Why hello {{username}}! Hope you're safe!</h1>
+  <h1>You typed in {{password}} as password</h1>
+
+  {% if username == "username" and password == "password" % }
+    <h2>You got the username and password right! 800 on the SAT reading for you!</h2>
+
+  {% else %}
+  <h2>You got the username and password wrong! : ( </h2>
+
+  {% endif %}
+</body>
+</html>

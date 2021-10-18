@@ -1,0 +1,8 @@
+Group Atom
+
+1. We can authenticate the form both in the template and on the server latter is likely better though
+2. Be weary of duplicate names
+3. You can have logic in your templates
+
+Sources on error handling
+https://www.programiz.com/python-programming/exception-handling
