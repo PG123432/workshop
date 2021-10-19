@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, session
+import os
 #dependencies....
 
 app = Flask(__name__)
 
+
+app.secret_key = os.urandom(32)
 
 #some constants because I don't feel like putting in 
 # "username" in, also easier to clean up when we need to
@@ -12,6 +15,14 @@ PASSWORD = "password"
 #login page
 @app.route("/")
 def index():
+
+    if 'username' in session.keys() and 'password' in session.keys():
+        return render_template("response.html", 
+            username = session.form['username'], 
+            password = session.form['password'], 
+            username_match= session.form['username'] == USERNAME,
+            password_match= session.form['password'] == PASSWORD)
+        
     return render_template("login.html")
 
 
