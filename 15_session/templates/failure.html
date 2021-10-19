@@ -1,0 +1,32 @@
+<!--
+    Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+    SoftDev
+    k15 -Sessions Greetings
+    2021-10-14
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Error!</title>
+</head>
+<body>
+
+  <h1>Login failed!</h1>
+
+  {% if not username_match and not password_match %}
+    <h2>Your username AND password don't match!</h2>
+  {% elif not username_match %}
+    <h2>Your username doesn't match</h2>
+  {% elif not password_match %}
+    <h2>Your password did not match!</h2>
+  {% endif %}
+
+<form action="/" method="GET">
+    <input type="submit" value="Back to login" />
+</form>
+
+</body>
+</html>

@@ -13,15 +13,15 @@ USERNAME = "username"
 PASSWORD = "password"
 
 #login page
-@app.route("/")
+@app.route("/", methods=["GET"])
 def index():
 
     if 'username' in session.keys() and 'password' in session.keys():
-        return render_template("response.html", 
-            username = session.form['username'], 
-            password = session.form['password'], 
-            username_match= session.form['username'] == USERNAME,
-            password_match= session.form['password'] == PASSWORD)
+        if session['username'] == USERNAME and session['password'] == PASSWORD:
+            #only if the code was right will we send them to success.html
+            return render_template("success.html", 
+                username = session['username'], 
+                password = session['password'])
         
     return render_template("login.html")
 
@@ -54,12 +54,19 @@ def auth():
         username_match: if the username's correct
         passwords_match: if the password is correct
         '''
-
-        return render_template("response.html", 
-            username = request.form['username'], 
-            password = request.form['password'], 
-            username_match= request.form['username'] == USERNAME,
-            password_match= request.form['password'] == PASSWORD)
+        if session['username'] == USERNAME and session['password'] == PASSWORD:
+            #if the passwords match render in the success portal
+            return render_template("success.html",
+                username = session['username'],
+                password = session['password'])
+        else:
+            #elsewise render in the failure with bools
+            #to describe what went
+            return render_template("failure.html", 
+                username = session['username'], 
+                password = session['password'], 
+                username_match= session['username'] == USERNAME,
+                password_match= session['password'] == PASSWORD)
 
     else:
         '''
@@ -71,14 +78,24 @@ def auth():
         if 'username' in session.keys() and 'password' in session.keys():
             #checking if the properties were logged into the keys
             return render_template("response.html", 
-                username = request.form['username'], 
-                password = request.form['password'], 
-                username_match= request.form['username'] == USERNAME,
-                password_match= request.form['password'] == PASSWORD)
+                username = session['username'], 
+                password = session['password'], 
+                username_match= session['username'] == USERNAME,
+                password_match= session['password'] == PASSWORD)
         else:
             #if for some reason the session isn't here we'll just redirect them back
-            return render_template("login.html", no_login=True)
+            return render_template("login.html")
 
+
+
+@app.route("/logout", methods=["POST"])
+def logout():
+    #getting rid of the session's details
+    session.pop("username")
+    session.pop("password")
+
+    #sending them back home
+    return render_template("login.html")
 
 if __name__ == "__main__":
     app.debug = True
