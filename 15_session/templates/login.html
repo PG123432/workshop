@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--
+    Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+    SoftDev
+    k15 -- Sessions Greetings
+    2021-10-14
+ -->
+
+
+<html>
+
+  <head>
+    <title> LOGIN PAGE </title>
+  </head>
+
+  <body>
+    <h2>Team Atom: Patrick Ging, Qina Liu, Joshua Kloepfer</h2>
+    <h1>
+      Secure Login
+    </h1>
+
+
+    <h3>
+      Enter your username and password below to proceed.
+      Btw username is "username" and password is "password"
+    </h3>
+
+    <br>
+
+    {% if no_login %}
+      <h3>Oops! Your session wasn't found or expired! Please login!</h3>
+    {% endif %}
+
+    <form action="/auth" method="POST">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <br>
+      <label for="password">Password</label>
+      <input type="text" name="password">
+      <br>
+      <input type="submit" name="sub1">
+    </form>
+    <br>
+  </body>
+
+</html>
