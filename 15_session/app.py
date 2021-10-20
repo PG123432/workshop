@@ -84,16 +84,16 @@ def auth():
         Will check for a session, if there's nothing, then we'll redirect them to the 
         home page with some instructions saying "please log in!"
         '''
+
+        #if the session is there AND there's a match
         if 'username' in session.keys() and 'password' in session.keys():
-            #checking if the properties were logged into the keys
-            return render_template("response.html", 
-                username = session['username'], 
-                password = session['password'], 
-                username_match= session['username'] == USERNAME,
-                password_match= session['password'] == PASSWORD)
-        else:
-            #if for some reason the session isn't here we'll just redirect them back
-            return render_template("login.html")
+            if session['username'] == USERNAME and session['password'] == PASSWORD:
+                #checking if the properties were logged into the keys
+                return render_template("success.html", 
+                    username = session['username'], 
+                    password = session['password'])
+        #if for some reason the session isn't here we'll just redirect them back
+        return render_template("login.html")
 
 
 
