@@ -1,8 +1,14 @@
-Group Atom
-
+Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+SoftDev
+k15 -- Sessions Greetings
+2021-10-14
+        
 1. We can authenticate the form both in the template and on the server latter is likely better though
 2. Be weary of duplicate names
 3. You can have logic in your templates
+4. % } throws an error; you can not have a space in between the % and }. It should be %}
+5. You can log out using form 
+6. The error page can use a separate template than the success page since the two serve two different needs.
 
 Sources on error handling
 https://www.programiz.com/python-programming/exception-handling

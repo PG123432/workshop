@@ -1,3 +1,11 @@
+'''
+    Team Atom 
+    Patrick Ging, Qina Liu, Joshua Kleopfar Period 2
+    k15-Sessions Greetings 
+    Oct - 19 - 2021
+
+'''
+
 from flask import Flask, render_template, request, session
 import os
 #dependencies....
@@ -18,11 +26,12 @@ def index():
 
     if 'username' in session.keys() and 'password' in session.keys():
         if session['username'] == USERNAME and session['password'] == PASSWORD:
-            #only if the code was right will we send them to success.html
+            #only if the stored was right will we send them to success.html
             return render_template("success.html", 
                 username = session['username'], 
                 password = session['password'])
-        
+       
+    #or we'll send them back to login 
     return render_template("login.html")
 
 
