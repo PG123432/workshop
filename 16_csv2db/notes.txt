@@ -1,0 +1,13 @@
+Team Atom - Josh Kleopfer Patrick Ging Qina Liu
+
+Period 2
+
+We noticed that we were better able to write our code when we wrote out the
+Features of our database and their respective datatypes.
+
+We also used ? In our formatting strings for the sql commands and it was 
+Quite useful for us because it was easier to read (and apparently it 
+Prevents something called injection attacks).
+
+Another weird thing is that databases are interested in a way like files, 
+I'm unsure if you can use with but perhaps further testing will tell us. 

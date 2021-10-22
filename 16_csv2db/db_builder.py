@@ -24,20 +24,27 @@ Roster - meant to have student names, age of student, and id
 	name : TEXT
 	age  : INTEGER
 	id   : INTEGER
-
 Classes - meant to have course names, course mark, and id
 	name : TEXT
 	mark : INTEGER
 	id   : INTEGER
 '''
+with open('students.csv', newline='') as csvfile:
+	reader = csv.DictReader(csvfile)
+	for row in reader:
+		c.execute("INSERT INTO roster (name, age, id) VALUES (?, ?, ?)", (row['name'], row['age'], row['id']))
+with open('courses.csv', newline='') as csvfile:
+	reader = csv.DictReader(csvfile)
+	for row in reader:
+		c.execute("INSERT INTO classes (name, mark, id) VALUES (?, ?, ?)", (row['code'], row['mark'], row['id']))
 
+c.execute("SELECT * FROM roster")
 
+print(c.fetchall())
 
+c.execute("SELECT * FROM classes")
 
-
-c.execute(command)    # run SQL statement
-
-
+print(c.fetchall())
 
 db.commit() #save changes
 db.close()  #close database
