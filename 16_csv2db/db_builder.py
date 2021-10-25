@@ -1,5 +1,5 @@
 #Team Atom - Patrick Ging Qina Liu Joshua Kleopfar
-#SoftDev  
+#SoftDev
 #skeleton/stub :: SQLITE3 BASICS
 #Oct 21 2021
 
@@ -15,8 +15,8 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 
 
-#command = "CREATE TABLE roster(name TEXT, age INTEGER, id INTEGER);"          # test SQL stmt in sqlite3 shell, save as string
-#command = "CREATE TABLE classes ( name TEXT, mark INTEGER, id INTEGER);"
+c.execute("CREATE TABLE IF NOT EXISTS roster(name TEXT, age INTEGER, id INTEGER, UNIQUE(id));")          # test SQL stmt in sqlite3 shell, save as string
+c.execute("CREATE TABLE IF NOT EXISTS classes ( name TEXT, mark INTEGER, id INTEGER, UNIQUE(name, mark, id));")
 
 
 '''
@@ -29,14 +29,17 @@ Classes - meant to have course names, course mark, and id
 	mark : INTEGER
 	id   : INTEGER
 '''
-with open('students.csv', newline='') as csvfile:
-	reader = csv.DictReader(csvfile)
-	for row in reader:
-		c.execute("INSERT INTO roster (name, age, id) VALUES (?, ?, ?)", (row['name'], row['age'], row['id']))
-with open('courses.csv', newline='') as csvfile:
-	reader = csv.DictReader(csvfile)
-	for row in reader:
-		c.execute("INSERT INTO classes (name, mark, id) VALUES (?, ?, ?)", (row['code'], row['mark'], row['id']))
+try:
+	with open('students.csv', newline='') as csvfile:
+		reader = csv.DictReader(csvfile)
+		for row in reader:
+			c.execute("INSERT INTO roster (name, age, id) VALUES (?, ?, ?);", (row['name'], row['age'], row['id']))
+	with open('courses.csv', newline='') as csvfile:
+		reader = csv.DictReader(csvfile)
+		for row in reader:
+			c.execute("INSERT INTO classes (name, mark, id) VALUES (?, ?, ?);", (row['code'], row['mark'], row['id']))
+except sqlite3.IntegrityError:
+	print("You have tried to enter a duplicate")
 
 c.execute("SELECT * FROM roster")
 

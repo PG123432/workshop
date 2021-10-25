@@ -11,3 +11,5 @@ Prevents something called injection attacks).
 
 Another weird thing is that databases are interested in a way like files, 
 I'm unsure if you can use with but perhaps further testing will tell us. 
+
+We can use unique when creating a table ot specify on duplicates for certain columns
