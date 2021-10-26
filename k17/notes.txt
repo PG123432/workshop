@@ -1,0 +1,8 @@
+Team Atom: Joshua Kloepfer, Patrick Ging, Qina Liu
+SoftDev
+P00 -- Wiki Design
+2021-10-25
+
+You can use parameters in your code, perhaps it would be a good idea to use it for the get for articles, but one concern would be the sql injection attack.
+
+A search bar would be a good idea only if we use a good way to search for an entry via its tags...how to efficiently search for it I'm not sure right now but to be investigated if we want this functionality
