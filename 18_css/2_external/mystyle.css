@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(118, 118, 118);
+}
+
+.fancy{
+  color: white;
+  text-align: center;
+  background-color: rgb(190, 190, 190);
+  font-family: Arial;
+}
+.flex{
+  display: flex;
+}
+.reg{
+  background-color: rgb(118, 118, 118)
+}
+.coolflex{
+  flex: 1;
+}
+h3{
+  font-family: Arial;
+}
+ul{
+  list-style-type: none; padding-left: 0;
+}
+li{
+  text-decoration: none; color: white; font-family: Arial;
+}
+p{
+  font-family: Arial;
+}
+h4{
+  color: white;
+}
+h2{
+   style="font-family: Arial;
+   font-weight: bold;
+}
+.wow{
+  text-align: right; font-family: Arial;
+  background-color: rgb(86,86,86);
+  color: rgb(118,118,118); font-size: 18px;
+}
+.divtwo{
+  flex: 2;
+}
