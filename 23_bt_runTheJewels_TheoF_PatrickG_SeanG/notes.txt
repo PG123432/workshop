@@ -4,3 +4,9 @@ Period2
 
 
 - there is no Jumbotron in Bootstrap 5,have to use some classes similar to it
+- you can stack classes in bootstrap
+- most color classes in bootstrap are associated with primary secondary dark success etc
+- You have a grid system too, it's a bit easier to type in because of the abbreviations but is basically the same
+- Dependencies exist for bootstrap too, you can use a cdn for bootstrap which is really nice
+- images can be used too!
+- what's a tad bit annoying is a lot of the classes for wrapping text aren't quite visualisable now (I suppose reading the wrong documentations compicates things lmao ) compared to foundation which has a bit more clarity in this regard
