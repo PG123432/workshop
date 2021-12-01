@@ -1,0 +1,12 @@
+Team Spite
+Patrick Ging, Sean Ging and Theo Fahey
+Period 1
+
+- must use the imports correctly or else the foundation css won't work :|
+- in order to use the grid systems you need to wrap in grid class 
+- Cleanliness in HTML is absolutely paramount for readability
+- 4 different colors (can be changed somewhow)
+- Can use different large medium and small for the classes when we have that size
+- Sometimes using the antiquited cite blocks is easier than using the cite property in the property
+- Have the script imports inside of the body
+- Vendor folder!!!!!

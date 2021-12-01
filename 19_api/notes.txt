@@ -1,0 +1,10 @@
+# Team TSP: Sean Ging, Patrick Ging, Theo Fahey
+# SoftDev
+# K19 -- A RESTful Journey Skyward; API Keys, JSON, urllib.request
+# 2021-11-23
+# time spent: 1hr
+Notes:
+JSON can load http object
+.loads() not .load()
+need to import urllib.request
+urllib.request module for request
