@@ -1,0 +1,9 @@
+Patrick Ging, Period 2
+
+Notes on installing apache on a droplet
+
+- Verification process on github for the code was surpsisingly difficult
+- when you ssh on mac, make sure you type "yes" instead of enter key
+- make sure your ssh'ing to the root@ip
+- apt-get install apache2 after apt-get update
+- /etc/init.d/apache start to start
