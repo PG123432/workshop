@@ -1,0 +1,10 @@
+Patrick Ging, Sean Ging
+Period 1
+K27
+February 6, 2022
+
+- You need to go to language tab in drracket and change to scheme
+- Fibonacci and factorial have faster variations
+- you need to have the script tag to make the funcs work
+- at the moment only works in console. 
+- Can have a "too much recursion error"; I suppose the faster versions would be necessary
