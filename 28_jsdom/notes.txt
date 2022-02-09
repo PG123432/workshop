@@ -1,0 +1,8 @@
+Patrick and Sean Ging
+Period 1
+K28
+
+
+- Had to make helper functions because if you tried to embed the change html into the recursive function, it would get the too much recursion error
+- Document.getElementById() is neat, though when you get the id wrong -_-
+- Automatic type conversion in JS
