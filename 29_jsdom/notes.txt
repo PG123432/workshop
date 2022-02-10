@@ -1,0 +1,7 @@
+Patrick and Sean Ging
+Period 1
+K28
+
+
+- Can consolidate the line into document.getElementById.addEventListener()
+- has to be after the function it uses is defined
