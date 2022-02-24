@@ -1,0 +1,13 @@
+Patrick and Sean Ging
+Team Blue Duck
+k32	
+
+why y > c.height - dvdHeight?
+		
+because of the fact tha things are not place at center and
+are compared to the disctance of the top left most corner, we
+do - dvdHeight or - dvdWidth to reaccount for it, so it changes direction
+when the lower right corner collides instead....
+
+
+remember to change the callback
