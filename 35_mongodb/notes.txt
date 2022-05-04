@@ -1,0 +1,6 @@
+Patrick Ging 
+SoftDev
+2022 - 05 - 04
+Period 1
+
+Atlas lets you run multiple instances of the same dataset (multiple instances are called collections)
