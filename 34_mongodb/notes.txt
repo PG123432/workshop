@@ -1,0 +1,8 @@
+Patrick Ging 
+SoftDev
+2022-05-04
+
+Notes:
+
+MongoDB doesn't use the SQL style of rows/columns
+Stores items in documents and stacks of documents.
