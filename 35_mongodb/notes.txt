@@ -4,3 +4,4 @@ SoftDev
 Period 1
 
 Atlas lets you run multiple instances of the same dataset (multiple instances are called collections)
+Can see physical (info of the file and some metadata ) and logical size (the info of the file)
